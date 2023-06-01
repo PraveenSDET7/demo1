@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.Banking.StellerBank.User.Apply_Debit_Card_Test">
+		  <methods>
+			  <include name="apply_Debit_Card"></include>
+		  </methods>
+      </class>
+      <class name="com.Banking.StellerBank.User.Fund_Transfer_Test"/>
+      <class name="com.Banking.StellerBank.User.Open_Account_Test"/>
+      <class name="com.Banking.StellerBank.User.Change_password_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
