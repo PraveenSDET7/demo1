@@ -22,8 +22,9 @@ public class BaseclassUtility
 	WebDriverUtility wlib=new WebDriverUtility();
 	DataBaseUtility dlib = new DataBaseUtility();
 	@BeforeSuite(groups={"SmokeTest","regTest"})
-	public void connectToDatabase() throws SQLException
+	public void connectToDatabase() throws SQLException, InterruptedException
 	{
+		Thread.sleep(7000);		
 		dlib.connect_To_Database();
 	}
 //	@Parameters("Browser")
